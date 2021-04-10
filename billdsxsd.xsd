@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="billdsxsd" targetNamespace="http://tempuri.org/billdsxsd.xsd" xmlns:mstns="http://tempuri.org/billdsxsd.xsd" xmlns="http://tempuri.org/billdsxsd.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="billdsxsd" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="billdsxsd" msprop:Generator_UserDSName="billdsxsd">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Bill_Details" msprop:Generator_TableClassName="Bill_DetailsDataTable" msprop:Generator_TableVarName="tableBill_Details" msprop:Generator_TablePropName="Bill_Details" msprop:Generator_RowDeletingName="Bill_DetailsRowDeleting" msprop:Generator_RowChangingName="Bill_DetailsRowChanging" msprop:Generator_RowEvHandlerName="Bill_DetailsRowChangeEventHandler" msprop:Generator_RowDeletedName="Bill_DetailsRowDeleted" msprop:Generator_UserTableName="Bill_Details" msprop:Generator_RowChangedName="Bill_DetailsRowChanged" msprop:Generator_RowEvArgName="Bill_DetailsRowChangeEvent" msprop:Generator_RowClassName="Bill_DetailsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:string" />
+              <xs:element name="BILLNO" msprop:Generator_ColumnVarNameInTable="columnBILLNO" msprop:Generator_ColumnPropNameInRow="BILLNO" msprop:Generator_ColumnPropNameInTable="BILLNOColumn" msprop:Generator_UserColumnName="BILLNO" type="xs:string" minOccurs="0" />
+              <xs:element name="BILLDATE" msprop:Generator_ColumnVarNameInTable="columnBILLDATE" msprop:Generator_ColumnPropNameInRow="BILLDATE" msprop:Generator_ColumnPropNameInTable="BILLDATEColumn" msprop:Generator_UserColumnName="BILLDATE" type="xs:string" minOccurs="0" />
+              <xs:element name="COMNAME" msprop:Generator_ColumnVarNameInTable="columnCOMNAME" msprop:Generator_ColumnPropNameInRow="COMNAME" msprop:Generator_ColumnPropNameInTable="COMNAMEColumn" msprop:Generator_UserColumnName="COMNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="COMADDR" msprop:Generator_ColumnVarNameInTable="columnCOMADDR" msprop:Generator_ColumnPropNameInRow="COMADDR" msprop:Generator_ColumnPropNameInTable="COMADDRColumn" msprop:Generator_UserColumnName="COMADDR" type="xs:string" minOccurs="0" />
+              <xs:element name="INVNO" msprop:Generator_ColumnVarNameInTable="columnINVNO" msprop:Generator_ColumnPropNameInRow="INVNO" msprop:Generator_ColumnPropNameInTable="INVNOColumn" msprop:Generator_UserColumnName="INVNO" type="xs:string" minOccurs="0" />
+              <xs:element name="INVDATE" msprop:Generator_ColumnVarNameInTable="columnINVDATE" msprop:Generator_ColumnPropNameInRow="INVDATE" msprop:Generator_ColumnPropNameInTable="INVDATEColumn" msprop:Generator_UserColumnName="INVDATE" type="xs:string" minOccurs="0" />
+              <xs:element name="SERIAL" msprop:Generator_ColumnVarNameInTable="columnSERIAL" msprop:Generator_ColumnPropNameInRow="SERIAL" msprop:Generator_ColumnPropNameInTable="SERIALColumn" msprop:Generator_UserColumnName="SERIAL" type="xs:string" minOccurs="0" />
+              <xs:element name="LOCATION" msprop:Generator_ColumnVarNameInTable="columnLOCATION" msprop:Generator_ColumnPropNameInRow="LOCATION" msprop:Generator_ColumnPropNameInTable="LOCATIONColumn" msprop:Generator_UserColumnName="LOCATION" type="xs:string" minOccurs="0" />
+              <xs:element name="CHALANNO" msprop:Generator_ColumnVarNameInTable="columnCHALANNO" msprop:Generator_ColumnPropNameInRow="CHALANNO" msprop:Generator_ColumnPropNameInTable="CHALANNOColumn" msprop:Generator_UserColumnName="CHALANNO" type="xs:string" minOccurs="0" />
+              <xs:element name="TOTALAMOUNT" msprop:Generator_ColumnVarNameInTable="columnTOTALAMOUNT" msprop:Generator_ColumnPropNameInRow="TOTALAMOUNT" msprop:Generator_ColumnPropNameInTable="TOTALAMOUNTColumn" msprop:Generator_UserColumnName="TOTALAMOUNT" type="xs:string" minOccurs="0" />
+              <xs:element name="TOAMOUNTINWORDS" msprop:Generator_ColumnVarNameInTable="columnTOAMOUNTINWORDS" msprop:Generator_ColumnPropNameInRow="TOAMOUNTINWORDS" msprop:Generator_ColumnPropNameInTable="TOAMOUNTINWORDSColumn" msprop:Generator_UserColumnName="TOAMOUNTINWORDS" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Bill_Details" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

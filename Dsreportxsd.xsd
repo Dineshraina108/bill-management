@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Dsreportxsd" targetNamespace="http://tempuri.org/Dsreportxsd.xsd" xmlns:mstns="http://tempuri.org/Dsreportxsd.xsd" xmlns="http://tempuri.org/Dsreportxsd.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Dsreportxsd" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Dsreportxsd" msprop:Generator_UserDSName="Dsreportxsd">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Repcominv" msprop:Generator_TableClassName="RepcominvDataTable" msprop:Generator_TableVarName="tableRepcominv" msprop:Generator_TablePropName="Repcominv" msprop:Generator_RowDeletingName="RepcominvRowDeleting" msprop:Generator_RowChangingName="RepcominvRowChanging" msprop:Generator_RowEvHandlerName="RepcominvRowChangeEventHandler" msprop:Generator_RowDeletedName="RepcominvRowDeleted" msprop:Generator_UserTableName="Repcominv" msprop:Generator_RowChangedName="RepcominvRowChanged" msprop:Generator_RowEvArgName="RepcominvRowChangeEvent" msprop:Generator_RowClassName="RepcominvRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="COMID" msprop:Generator_ColumnVarNameInTable="columnCOMID" msprop:Generator_ColumnPropNameInRow="COMID" msprop:Generator_ColumnPropNameInTable="COMIDColumn" msprop:Generator_UserColumnName="COMID" type="xs:string" />
+              <xs:element name="COMNAME" msprop:Generator_ColumnVarNameInTable="columnCOMNAME" msprop:Generator_ColumnPropNameInRow="COMNAME" msprop:Generator_ColumnPropNameInTable="COMNAMEColumn" msprop:Generator_UserColumnName="COMNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="INVID" msprop:Generator_ColumnVarNameInTable="columnINVID" msprop:Generator_ColumnPropNameInRow="INVID" msprop:Generator_ColumnPropNameInTable="INVIDColumn" msprop:Generator_UserColumnName="INVID" type="xs:string" minOccurs="0" />
+              <xs:element name="INVNO" msprop:Generator_ColumnVarNameInTable="columnINVNO" msprop:Generator_ColumnPropNameInRow="INVNO" msprop:Generator_ColumnPropNameInTable="INVNOColumn" msprop:Generator_UserColumnName="INVNO" type="xs:string" minOccurs="0" />
+              <xs:element name="INVDATE" msprop:Generator_ColumnVarNameInTable="columnINVDATE" msprop:Generator_ColumnPropNameInRow="INVDATE" msprop:Generator_ColumnPropNameInTable="INVDATEColumn" msprop:Generator_UserColumnName="INVDATE" type="xs:string" minOccurs="0" />
+              <xs:element name="SERIAL" msprop:Generator_ColumnVarNameInTable="columnSERIAL" msprop:Generator_ColumnPropNameInRow="SERIAL" msprop:Generator_ColumnPropNameInTable="SERIALColumn" msprop:Generator_UserColumnName="SERIAL" type="xs:string" minOccurs="0" />
+              <xs:element name="INVLOCATION" msprop:Generator_ColumnVarNameInTable="columnINVLOCATION" msprop:Generator_ColumnPropNameInRow="INVLOCATION" msprop:Generator_ColumnPropNameInTable="INVLOCATIONColumn" msprop:Generator_UserColumnName="INVLOCATION" type="xs:string" minOccurs="0" />
+              <xs:element name="CHALANNO" msprop:Generator_ColumnVarNameInTable="columnCHALANNO" msprop:Generator_ColumnPropNameInRow="CHALANNO" msprop:Generator_ColumnPropNameInTable="CHALANNOColumn" msprop:Generator_UserColumnName="CHALANNO" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Repcompro" msprop:Generator_TableClassName="RepcomproDataTable" msprop:Generator_TableVarName="tableRepcompro" msprop:Generator_TablePropName="Repcompro" msprop:Generator_RowDeletingName="RepcomproRowDeleting" msprop:Generator_RowChangingName="RepcomproRowChanging" msprop:Generator_RowEvHandlerName="RepcomproRowChangeEventHandler" msprop:Generator_RowDeletedName="RepcomproRowDeleted" msprop:Generator_UserTableName="Repcompro" msprop:Generator_RowChangedName="RepcomproRowChanged" msprop:Generator_RowEvArgName="RepcomproRowChangeEvent" msprop:Generator_RowClassName="RepcomproRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="COMID" msprop:Generator_ColumnVarNameInTable="columnCOMID" msprop:Generator_ColumnPropNameInRow="COMID" msprop:Generator_ColumnPropNameInTable="COMIDColumn" msprop:Generator_UserColumnName="COMID" type="xs:string" />
+              <xs:element name="COMNAME" msprop:Generator_ColumnVarNameInTable="columnCOMNAME" msprop:Generator_ColumnPropNameInRow="COMNAME" msprop:Generator_ColumnPropNameInTable="COMNAMEColumn" msprop:Generator_UserColumnName="COMNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="INVNO_FK" msprop:Generator_ColumnVarNameInTable="columnINVNO_FK" msprop:Generator_ColumnPropNameInRow="INVNO_FK" msprop:Generator_ColumnPropNameInTable="INVNO_FKColumn" msprop:Generator_UserColumnName="INVNO_FK" type="xs:string" minOccurs="0" />
+              <xs:element name="PRID" msprop:Generator_ColumnVarNameInTable="columnPRID" msprop:Generator_ColumnPropNameInRow="PRID" msprop:Generator_ColumnPropNameInTable="PRIDColumn" msprop:Generator_UserColumnName="PRID" type="xs:string" minOccurs="0" />
+              <xs:element name="PRNAME" msprop:Generator_ColumnVarNameInTable="columnPRNAME" msprop:Generator_ColumnPropNameInRow="PRNAME" msprop:Generator_ColumnPropNameInTable="PRNAMEColumn" msprop:Generator_UserColumnName="PRNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="PRQTY" msprop:Generator_ColumnVarNameInTable="columnPRQTY" msprop:Generator_ColumnPropNameInRow="PRQTY" msprop:Generator_ColumnPropNameInTable="PRQTYColumn" msprop:Generator_UserColumnName="PRQTY" type="xs:string" minOccurs="0" />
+              <xs:element name="PRRATE" msprop:Generator_ColumnVarNameInTable="columnPRRATE" msprop:Generator_ColumnPropNameInRow="PRRATE" msprop:Generator_ColumnPropNameInTable="PRRATEColumn" msprop:Generator_UserColumnName="PRRATE" type="xs:string" minOccurs="0" />
+              <xs:element name="PRAMOUNT" msprop:Generator_ColumnVarNameInTable="columnPRAMOUNT" msprop:Generator_ColumnPropNameInRow="PRAMOUNT" msprop:Generator_ColumnPropNameInTable="PRAMOUNTColumn" msprop:Generator_UserColumnName="PRAMOUNT" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Repinvpro" msprop:Generator_TableClassName="RepinvproDataTable" msprop:Generator_TableVarName="tableRepinvpro" msprop:Generator_TablePropName="Repinvpro" msprop:Generator_RowDeletingName="RepinvproRowDeleting" msprop:Generator_RowChangingName="RepinvproRowChanging" msprop:Generator_RowEvHandlerName="RepinvproRowChangeEventHandler" msprop:Generator_RowDeletedName="RepinvproRowDeleted" msprop:Generator_UserTableName="Repinvpro" msprop:Generator_RowChangedName="RepinvproRowChanged" msprop:Generator_RowEvArgName="RepinvproRowChangeEvent" msprop:Generator_RowClassName="RepinvproRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="INVID" msprop:Generator_ColumnVarNameInTable="columnINVID" msprop:Generator_ColumnPropNameInRow="INVID" msprop:Generator_ColumnPropNameInTable="INVIDColumn" msprop:Generator_UserColumnName="INVID" type="xs:string" />
+              <xs:element name="INVNO" msprop:Generator_ColumnVarNameInTable="columnINVNO" msprop:Generator_ColumnPropNameInRow="INVNO" msprop:Generator_ColumnPropNameInTable="INVNOColumn" msprop:Generator_UserColumnName="INVNO" type="xs:string" minOccurs="0" />
+              <xs:element name="INVDATE" msprop:Generator_ColumnVarNameInTable="columnINVDATE" msprop:Generator_ColumnPropNameInRow="INVDATE" msprop:Generator_ColumnPropNameInTable="INVDATEColumn" msprop:Generator_UserColumnName="INVDATE" type="xs:string" minOccurs="0" />
+              <xs:element name="PRID" msprop:Generator_ColumnVarNameInTable="columnPRID" msprop:Generator_ColumnPropNameInRow="PRID" msprop:Generator_ColumnPropNameInTable="PRIDColumn" msprop:Generator_UserColumnName="PRID" type="xs:string" minOccurs="0" />
+              <xs:element name="PRNAME" msprop:Generator_ColumnVarNameInTable="columnPRNAME" msprop:Generator_ColumnPropNameInRow="PRNAME" msprop:Generator_ColumnPropNameInTable="PRNAMEColumn" msprop:Generator_UserColumnName="PRNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="PRQTY" msprop:Generator_ColumnVarNameInTable="columnPRQTY" msprop:Generator_ColumnPropNameInRow="PRQTY" msprop:Generator_ColumnPropNameInTable="PRQTYColumn" msprop:Generator_UserColumnName="PRQTY" type="xs:string" minOccurs="0" />
+              <xs:element name="PRRATE" msprop:Generator_ColumnVarNameInTable="columnPRRATE" msprop:Generator_ColumnPropNameInRow="PRRATE" msprop:Generator_ColumnPropNameInTable="PRRATEColumn" msprop:Generator_UserColumnName="PRRATE" type="xs:string" minOccurs="0" />
+              <xs:element name="PRAMOUNT" msprop:Generator_ColumnVarNameInTable="columnPRAMOUNT" msprop:Generator_ColumnPropNameInRow="PRAMOUNT" msprop:Generator_ColumnPropNameInTable="PRAMOUNTColumn" msprop:Generator_UserColumnName="PRAMOUNT" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Repcominv" />
+      <xs:field xpath="mstns:COMID" />
+    </xs:unique>
+    <xs:unique name="Repcompro_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Repcompro" />
+      <xs:field xpath="mstns:COMID" />
+    </xs:unique>
+    <xs:unique name="Repinvpro_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Repinvpro" />
+      <xs:field xpath="mstns:INVID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3DFBBB42-3941-4AED-BDF0-2D1484DDF1C2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>BILL_SYSTEM.My.MyApplication</StartupObject>
+    <RootNamespace>BILL_SYSTEM</RootNamespace>
+    <AssemblyName>BILL SYSTEM</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>BILL SYSTEM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>BILL SYSTEM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Oracle.DataAccess, Version=2.112.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\VISHNU\LOGDETAIL\LOGDETAIL\bin\Debug\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Telerik.WinControls, Version=2019.1.115.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.GridView, Version=2019.1.115.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.UI, Version=2019.1.115.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="TelerikCommon, Version=2019.1.115.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="billdsxsd.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>billdsxsd.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="billdsxsd.vb">
+      <DependentUpon>billdsxsd.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BillForm.Designer.vb">
+      <DependentUpon>BillForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BillForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Billreport.Designer.vb">
+      <DependentUpon>Billreport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Billreport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Creation.Designer.vb">
+      <DependentUpon>Creation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Creation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Databaseaction.vb" />
+    <Compile Include="Daywise.vb" />
+    <Compile Include="DaywiseRep.Designer.vb">
+      <DependentUpon>DaywiseRep.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DaywiseRep.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete.Designer.vb">
+      <DependentUpon>Delete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Display.Designer.vb">
+      <DependentUpon>Display.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Display.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DScom.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DScom.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DScom.vb">
+      <DependentUpon>DScom.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsDayWise.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsDayWise.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsDayWise.vb">
+      <DependentUpon>DsDayWise.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dsinvoice.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Dsinvoice.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsProduct.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsProduct.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dsreportxsd.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Dsreportxsd.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Edit.Designer.vb">
+      <DependentUpon>Edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.vb">
+      <DependentUpon>Home.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imageprocess.Designer.vb">
+      <DependentUpon>Imageprocess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Imageprocess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Designer.vb">
+      <DependentUpon>MasterPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MonthlyRep.Designer.vb">
+      <DependentUpon>MonthlyRep.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MonthlyRep.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="OTPGEN.Designer.vb">
+      <DependentUpon>OTPGEN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OTPGEN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Repfile.Designer.vb">
+      <DependentUpon>Repfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Repfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SMSCOMMS.vb" />
+    <Compile Include="UserLogin.Designer.vb">
+      <DependentUpon>UserLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USERREG.Designer.vb">
+      <DependentUpon>USERREG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="USERREG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BillForm.resx">
+      <DependentUpon>BillForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Billrep.rdlc" />
+    <EmbeddedResource Include="Billreport.resx">
+      <DependentUpon>Billreport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Creation.resx">
+      <DependentUpon>Creation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Daycominvprorep.rdlc" />
+    <EmbeddedResource Include="Dayrepinvoice.rdlc" />
+    <EmbeddedResource Include="Daywisecomandinv.rdlc" />
+    <EmbeddedResource Include="Daywiseinvandpro.rdlc" />
+    <EmbeddedResource Include="DaywiseRep.resx">
+      <DependentUpon>DaywiseRep.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Daywiserepproduct.rdlc" />
+    <EmbeddedResource Include="Delete.resx">
+      <DependentUpon>Delete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Display.resx">
+      <DependentUpon>Display.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit.resx">
+      <DependentUpon>Edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imageprocess.resx">
+      <DependentUpon>Imageprocess.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterPage.resx">
+      <DependentUpon>MasterPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Moncominv.rdlc" />
+    <EmbeddedResource Include="Moncominvpro.rdlc" />
+    <EmbeddedResource Include="Moninvpro.rdlc" />
+    <EmbeddedResource Include="Moninvreprdlc.rdlc" />
+    <EmbeddedResource Include="Monprorep.rdlc" />
+    <EmbeddedResource Include="MonthlyRep.resx">
+      <DependentUpon>MonthlyRep.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Monvomrep.rdlc" />
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTPGEN.resx">
+      <DependentUpon>OTPGEN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reinvoice.rdlc" />
+    <EmbeddedResource Include="Repcomdetails.rdlc" />
+    <EmbeddedResource Include="Repcominv.rdlc" />
+    <EmbeddedResource Include="Repcompro.rdlc" />
+    <EmbeddedResource Include="Repdaywise.rdlc" />
+    <EmbeddedResource Include="Repfile.resx">
+      <DependentUpon>Repfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repinvoice.rdlc" />
+    <EmbeddedResource Include="Repinvpro.rdlc" />
+    <EmbeddedResource Include="Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repproduct.rdlc" />
+    <EmbeddedResource Include="UserLogin.resx">
+      <DependentUpon>UserLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USERREG.resx">
+      <DependentUpon>USERREG.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="billdsxsd.xsc">
+      <DependentUpon>billdsxsd.xsd</DependentUpon>
+    </None>
+    <None Include="billdsxsd.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>billdsxsd.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="billdsxsd.xss">
+      <DependentUpon>billdsxsd.xsd</DependentUpon>
+    </None>
+    <None Include="DScom.xsc">
+      <DependentUpon>DScom.xsd</DependentUpon>
+    </None>
+    <None Include="DScom.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DScom.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DScom.xss">
+      <DependentUpon>DScom.xsd</DependentUpon>
+    </None>
+    <None Include="DsDayWise.xsc">
+      <DependentUpon>DsDayWise.xsd</DependentUpon>
+    </None>
+    <None Include="DsDayWise.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsDayWise.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DsDayWise.xss">
+      <DependentUpon>DsDayWise.xsd</DependentUpon>
+    </None>
+    <None Include="Dsinvoice.xsc">
+      <DependentUpon>Dsinvoice.xsd</DependentUpon>
+    </None>
+    <None Include="Dsinvoice.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Dsinvoice.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Dsinvoice.xss">
+      <DependentUpon>Dsinvoice.xsd</DependentUpon>
+    </None>
+    <None Include="DsProduct.xsc">
+      <DependentUpon>DsProduct.xsd</DependentUpon>
+    </None>
+    <None Include="DsProduct.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsProduct.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DsProduct.xss">
+      <DependentUpon>DsProduct.xsd</DependentUpon>
+    </None>
+    <None Include="Dsreportxsd.xsc">
+      <DependentUpon>Dsreportxsd.xsd</DependentUpon>
+    </None>
+    <None Include="Dsreportxsd.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Dsreportxsd.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Dsreportxsd.xss">
+      <DependentUpon>Dsreportxsd.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images2.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
